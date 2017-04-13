@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Marca Turística-Nayarit Guide</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                    <div class="col-lg-offset-2 col-lg-2">
+                            <img src="imagenes/logoNayaritGuide.png" class="img-rounded" style="width:150px">
+                    </div>
+                    
+                    <div class=" col-lg-8">                   
+                                <label for="labelmarca" class="control-label input-lg">Marca Turística</label>
+                    </div>
+            </div>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#ingresar">Ingresar</a></li>
+                <li><a data-toggle="tab" href="#consultar">Consultar</a></li>
+                <li><a data-toggle="tab" href="#modificar">Modificar</a></li>
+                <li><a data-toggle="tab" href="#eliminar">Eliminar</a></li>
+              </ul>
+
+              <div class="tab-content">
+                <div id="ingresar" class="tab-pane fade in active">
+                  <!-- INGRESAR -->
+                  <form class="form-horizontal" role="form" action="OpcionesGuia.html" method="post">
+
+                      <div class="form-group">
+                          <div class="col-lg-offset-2 col-lg-8">
+                              <label for="txtmarcaturistica" class="control-label">Marca Turística </label>
+                              <input type="text" id="txtmarcaturistica" class="form-control col-lg-8"/>
+                          </div>
+
+                       </div>
+                      <div class="form-group">
+                              <div class="col-lg-offset-5 col-lg-7">
+                                  <button type="submit" class="col-lg-4 btn btn-primary">Guardar</button>
+                              </div>
+                      </div>
+                      
+                      <!-- -->
+                         <table class="table table-condensed">
+                            <thead>
+                              <tr>
+                                <th>Clave marca</th>
+                                <th>Marca Turística</th>
+                                
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>Riviera Nayarit</td>
+                                
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>Lagunas encantadas</td>
+                                
+                              </tr>
+                              
+                            </tbody>
+                          </table>
+                         <!-- -->
+                   </form>  
+                  
+                  <!--          -->
+                </div>
+                <div id="consultar" class="tab-pane fade">
+                  <!-- CONSULTAR -->
+                  <form class="form-horizontal" role="form" action="OpcionesGuia.html" method="post">
+                
+                    <div class="form-group">
+                        <div class="col-lg-offset-2 col-lg-8">
+                                <label for="txtbmarca" class="control-label">Marca Turística </label>
+                                <div class="input-group">
+                                    <input type="text" id="txtbmarca" placeholder="Buscar" class="form-control col-lg-4"/>
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                    </div>
+                                </div>
+                        </div>
+                      
+                    </div>
+                    
+                    <div>
+                         <!-- -->
+                         <table class="table table-condensed">
+                            <thead>
+                              <tr>
+                                <th>Clave marca</th>
+                                <th>Marca Turística</th>
+                                
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>Riviera Nayarit</td>
+                                
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>Lagunas Encantadas</td>
+                                
+                              </tr>
+                              
+                            </tbody>
+                          </table>
+                         <!-- -->
+                    </div>
+               </form>
+                  <!-- -->
+                </div>
+                <div id="modificar" class="tab-pane fade">
+                  <!-- MODIFICAR MARCAS TURÍSTICAS-->
+                  <!-- -->
+              <form class="form-horizontal" role="form" action="OpcionesGuia.html" method="post">
+                
+                    <div class="form-group">
+                        <div class="col-lg-offset-2 col-lg-8">
+                                <label for="txtbnombre" class="control-label">Nombre Marca </label>
+                                <div class="input-group">
+                                    <input type="text" id="txtbnombre" placeholder="Buscar" class="form-control col-lg-4"/>
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                    </div>
+                                </div>
+                        </div>
+                      
+                    </div>
+                    <div class="form-group">
+                          <div class="col-lg-offset-2 col-lg-8">
+                              <label for="txtmarcaturistica" class="control-label">Marca Turística </label>
+                              <input type="text" id="txtmarcaturistica" class="form-control col-lg-8"/>
+                          </div>
+
+                    </div>
+                    <div class="form-group">
+                              <div class="col-lg-offset-5 col-lg-7">
+                                  <button type="submit" class="col-lg-4 btn btn-primary">Modificar</button>
+                              </div>
+                      </div>
+                    <div>
+                         <!-- -->
+                         <table class="table table-condensed">
+                            <thead>
+                              <tr>
+                                <th>Clave marca</th>
+                                <th>Marca Turística</th>
+                                
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>Riviera Nayarit</td>
+                                
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>Lagunas Encantadas</td>
+                                
+                              </tr>
+                              
+                            </tbody>
+                          </table>
+                         <!-- -->
+                    </div>
+               </form>
+              <!-- -->
+                  <!-- -->
+                </div>
+                <div id="eliminar" class="tab-pane fade">
+                  <!-- ELIMINAR-->
+                  <form class="form-horizontal" role="form" action="OpcionesGuia.html" method="post">
+                   <div class="form-group">
+                        <div class="col-lg-offset-2 col-lg-8">
+                                <label for="txtbmarca" class="control-label">Marca Turística </label>
+                                <div class="input-group">
+                                    <input type="text" id="txtbmarca" placeholder="Buscar" class="form-control col-lg-4"/>
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                    </div>
+                                </div>
+                        </div>
+                      
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-offset-5 col-lg-7">
+                            <button type="submit" class="col-lg-4 btn btn-primary">Eliminar </button>
+                        </div>
+                    </div>
+                </form>
+                  <!-- -->
+                </div>
+              </div>
+          
+        </div>
+    </body>
+</html>

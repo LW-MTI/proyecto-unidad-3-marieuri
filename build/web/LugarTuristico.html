@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Lugar Turístico-Nayarit Guide</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            
+            <div class="form-group">
+                    <div class="jumbotron">
+                            <div class="col-lg-offset-2 col-lg-2">
+                                 <img src="imagenes/logoNayaritGuide.png" class="img-rounded" style="width:150px">
+                            </div>
+
+                            <div class=" col-lg-8">                   
+                                  <label for="txtusuariosistema" class="control-label">Lugar Turístico</label>
+                            </div>
+                    </div>
+                </div>
+            <!-- -->
+         <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#ingresar">Ingresar</a></li>
+                <li><a data-toggle="tab" href="#consultar">Consultar</a></li>
+                <li><a data-toggle="tab" href="#modificar">Modificar</a></li>
+                <li><a data-toggle="tab" href="#eliminar">Eliminar</a></li>
+              </ul>
+
+              <div class="tab-content">
+                <div id="ingresar" class="tab-pane fade in active">
+                  <!--INGRESAR LUGAR -->
+                  <form class="form-horizontal" role="form" action="OpcionesGuia.html" method="post">
+            
+                     <div class="form-group">
+                        <div class="col-lg-offset-2 col-lg-4">
+                            <label for="txtnombrelugar" class="control-label">Lugar Turístico </label>
+                            <input type="text" id="txtnombrelugar" class="form-control col-lg-6 "/>
+                        </div>
+                         
+                        <div class="col-lg-6">
+                                <label for="txtrol" class="control-label">Tipo Lugar </label>
+                                <select class="form-control" id="selTipoLugar">
+                                        <option>Litoral</option>
+                                        <option>Lagunas y depósito de agua</option>
+                                        <option>Corriente de agua</option>
+                                        <option>Vulcanismo</option>
+                                        <option>Relieve</option>
+                                        <option>Agrupaciones Vegetales</option>
+                                        <option>Agrupaciones Animales</option>
+                                        <option>Cultural-Histórico</option>
+                                        <option>Atractivo contemporáneo-No comercial</option>
+                                        <option>Atractivo contemporáneo-Comercial</option>
+                                  </select>
+                            </div>
+                    </div>
+                   
+                    <div class="form-group">
+                        <div class="col-lg-offset-2 col-lg-10">
+                                <label for="comment" class="control-label">Descripción</label>
+                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                         </div>
+                           
+                            
+                    </div>
+                    
+                <div class="form-group">
+                    <div class="col-lg-offset-5 col-lg-7">
+                        <button type="submit" class="col-lg-4 btn btn-primary">Guardar</button>
+                    </div>
+                </div>   
+                        <!-- -->
+                         <table class="table table-condensed">
+                            <thead>
+                              <tr>
+                                <th>Clave</th>
+                                <th>Lugar</th>
+                                <th>Descripción</th>
+                                
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>Sayulita</td>
+                                <td>
+Sayulita es una pequeña localidad localizada en la Bahía de Banderas en el sur del estado de Nayarit en las costas del océano pacífico, México.
+                                </td>
+                              </tr>
+                              
+                              
+                            </tbody>
+                          </table>
+                         <!-- -->
+                     </form> 
+
+                  <!-- -->
+                </div>
+                <div id="consultar" class="tab-pane fade">
+                  <!--CONSULTAR LUGAR -->
+                  <form class="form-horizontal" role="form" action="OpcionesGuia.html" method="post">
+                
+                    <div class="form-group">
+                        <div class="col-lg-offset-2 col-lg-8">
+                                <label for="txtblugar" class="control-label   ">Lugar</label>
+                                <div class="input-group">
+                                    <input type="text" id="txtblugar" placeholder="Buscar" class="form-control col-lg-4"/>
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                    </div>
+                                </div>
+                        </div>
+                      
+                    </div>
+                    
+                    <div>
+                         <!-- -->
+                         <table class="table table-condensed">
+                            <thead>
+                              <tr>
+                                <th>Clave</th>
+                                <th>Lugar</th>
+                                <th>Descripción</th>
+                                
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>Sayulita</td>
+                                <td>
+Sayulita es una pequeña localidad localizada en la Bahía de Banderas en el sur del estado de Nayarit en las costas del océano pacífico, México.
+                                </td>
+                              </tr>
+                              
+                              
+                            </tbody>
+                          </table>
+                         <!-- -->
+                    </div>
+               </form>
+                  <!-- -->
+                </div>
+                <div id="modificar" class="tab-pane fade">
+                  <!--MODIFICAR LUGAR -->
+                  <form class="form-horizontal" role="form" action="OpcionesGuia.html" method="post">
+                
+                    <div class="form-group">
+                        <div class="col-lg-offset-2 col-lg-8">
+                                <label for="txtblugar" class="control-label">Lugar</label>
+                                <div class="input-group">
+                                    <input type="text" id="txtblugar" placeholder="Buscar" class="form-control"/>
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                    </div>
+                                </div>
+                        </div>
+                      
+                    </div>
+                    <div class="form-group">
+                          <div class="col-lg-offset-2 col-lg-8">
+                              <label for="txtlugar" class="control-label">Lugar </label>
+                              <input type="text" id="txtlugar" class="form-control col-lg-8"/>
+                          </div>
+
+                    </div>
+                    <div class="form-group">
+                              <div class="col-lg-offset-5 col-lg-7">
+                                  <button type="submit" class="col-lg-4 btn btn-primary">Modificar</button>
+                              </div>
+                      </div>
+                    <div>
+                         <!-- -->
+                         <table class="table table-condensed">
+                            <thead>
+                              <tr>
+                                <th>Clave</th>
+                                <th>Lugar</th>
+                                <th>Descripción</th>
+                                
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>Sayulita</td>
+                                <td>
+Sayulita es una pequeña localidad localizada en la Bahía de Banderas en el sur del estado de Nayarit en las costas del océano pacífico, México.
+                                </td>
+                              </tr>
+                              
+                              
+                            </tbody>
+                          </table>
+                         <!-- -->
+                    </div>
+               </form>
+                  <!-- -->
+                </div>
+                <div id="eliminar" class="tab-pane fade">
+                  <!--ELIMINAR LUGAR-->
+                  <form class="form-horizontal" role="form" action="OpcionesGuia.html" method="post">
+                   <div class="form-group">
+                        <div class="col-lg-offset-2 col-lg-8">
+                                <label for="txtblugar" class="control-label">Lugar</label>
+                                <div class="input-group">
+                                    <input type="text" id="txtblugar" placeholder="Buscar" class="form-control col-lg-4"/>
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                    </div>
+                                </div>
+                        </div>
+                      
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-offset-5 col-lg-7">
+                            <button type="submit" class="col-lg-4 btn btn-primary">Eliminar</button>
+                        </div>
+                    </div>
+                </form>
+                  <!-- -->
+                </div>
+              </div>
+         <!-- -->
+            
+        </div>
+    </body>
+</html>
